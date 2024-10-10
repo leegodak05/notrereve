@@ -1,0 +1,692 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+a {
+    color: inherit;
+    text-decoration: none;
+}
+
+ul {
+    list-style: none;
+}
+
+body {
+    font-size: 16px;
+    line-height: 26px;
+    font-family: 'Pretendard';
+    color: #350825;
+}
+
+/* header 시작 */
+#header {
+    width: 1200px;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    z-index: 50;
+}
+
+.nav {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    text-align: center;
+    width: 80%;
+    transition: 0.3s;
+    height: 90px;
+}
+
+.nav>li {
+    width: 25%;
+    z-index: 11;
+}
+
+.nav>li>a {
+    display: block;
+    padding: 30px;
+    font-size: 20px;
+    font-weight: 600;
+
+}
+
+#heaer_wrap {
+    width: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: 10;
+    height: 80px;
+    color: #ff2cb8;
+}
+
+#header h1 {
+    padding-top: 10px;
+}
+
+/* sub시작 */
+.sub_wrap {
+    width: 100%;
+    height: 300px;
+    position: absolute;
+    top: 90px;
+    left: 0;
+    background-color: #fff;
+    opacity: 80%;
+    z-index: 10;
+    display: none;
+}
+
+.sub {
+    z-index: 13;
+    padding-top: 10px;
+}
+
+.sub>li {
+    color: #ff2cb8;
+    z-index: 50;
+}
+
+.sub>li>a {
+    display: inline-block;
+    z-index: 15;
+    padding: 10px 0;
+    font-weight: 600;
+    font-size: 20px;
+}
+
+.nav>li>a:hover {
+    color: pink;
+}
+
+.solid {
+    width: 50%;
+    margin: auto;
+    margin-top: 29px;
+    height: 5px;
+    background: pink;
+    visibility: hidden;
+    opacity: 0;
+    transform: scaleX(0);
+    transition-property: opacity, transform;
+    transition-duration: 0.5s;
+}
+
+.nav>li>a:hover .solid {
+    transform: scaleX(1);
+    opacity: 1;
+    visibility: visible;
+}
+
+.sub>li>a>img {
+    width: 20px;
+}
+
+.sub>li>a:hover {
+    font-weight: 700;
+    color: rgb(255, 211, 218);
+    text-shadow: 1px 1px 1px #ff2cb8;
+}
+
+.sub>li>a:hover>img {
+    /* width: 30px; */
+}
+
+/*아이디를 활용한 스타일이 들어가있다면, 선택자 on을 우선순위를 높여서 활용하세요!*/
+/* 지우면 안됨 !! 스크롤 내려갈때 해더 고정 되는 css */
+div#heaer_wrap.on {
+    background-color: #fff;
+    color: #ff2cb8;
+    position: fixed;
+    height: 80px;
+    box-shadow: 10px 0 10px #f880d1;
+}
+
+div#heaer_wrap.on>li>a {
+    padding-top: 25px;
+}
+
+div#heaer_wrap.on div.solid {
+    margin-top: 20px;
+}
+
+div#heaer_wrap.on h1 img {
+    width: 80%;
+    height: 70%;
+    padding-top: 10px;
+}
+
+div#heaer_wrap.on .sub_wrap {
+    position: absolute;
+    top: 80px;
+    left: 0;
+}
+
+div#heaer_wrap.on .sub {
+    padding-top: 0;
+}
+
+/* 해더 고정 끝 */
+
+
+.sec1 {
+    background: pink
+}
+
+.sec2 {
+    background: #fff;
+}
+
+.sec3 {
+    background: #fff
+}
+
+body {
+    text-align: center;
+}
+
+.sec7 {
+    background: #e3fff4;
+}
+
+.sec8 {
+    background: #e3fff4;
+}
+
+.sec9 {
+    background: #e3fff4;
+}
+
+#banner_wrap {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+}
+
+.banner-container {
+    display: flex;
+    /* width: 1200px; */
+    height: 750px;
+
+}
+
+.banner {
+    width: 400px;
+    height: 750px;
+    background-color: lightblue;
+    transition: width 0.5s ease, z-index 0.5s ease;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 24px;
+    cursor: pointer;
+}
+
+
+
+.banner img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    transition: opacity 0.5s ease;
+}
+
+.banner:hover {
+    width: 1200px;
+    /* 호버 시 배너 너비 확장 */
+    z-index: 1;
+    /* 호버 시 해당 배너가 위로 올라오도록 */
+}
+
+.banner:hover img {
+    opacity: 0;
+    /* 호버 시 원래 이미지를 숨깁니다 */
+}
+
+/* sec3 */
+.backgroundng1 {
+    background: url(../img_sub2/brandskybg1.png) no-repeat;
+    height: 100%;
+    position: relative;
+
+}
+
+.uniconimg1 {
+    width: 375px;
+    position: absolute;
+    top: 100px;
+}
+
+.notrelogo {
+    position: absolute;
+    top: 410px;
+    left: 400px;
+}
+
+.backgroundng1>p {
+    color: #fff;
+    font-size: 24px;
+    line-height: 36px;
+    position: absolute;
+    top: 650px;
+    left: 660px;
+}
+
+.backgroundng1>p>span {
+    color: #ff2cb8;
+    font-size: 48px;
+    font-weight: 800;
+}
+
+.backgroundng2 {
+    background: url(../img_sub2/brandskybg2.png) no-repeat;
+    background-position: 260px 0;
+    height: 100%;
+    position: relative;
+}
+
+.revelogo {
+    position: absolute;
+    top: 450px;
+    left: 500px;
+}
+
+.uniconimg2 {
+    position: absolute;
+    top: 40px;
+    left: 720px;
+}
+
+.backgroundng2>p {
+    color: #fff;
+    font-size: 24px;
+    line-height: 36px;
+    position: absolute;
+    bottom: 150px;
+    left: 760px;
+}
+
+.backgroundng2>p>span {
+    color: #ff2cb8;
+    font-size: 48px;
+    font-weight: 800;
+}
+
+.logobibg {
+    position: relative;
+    height: 100%;
+    width: 100%;
+    margin: 0 auto;
+}
+
+.bilogo {
+    position: absolute;
+    top: 250px;
+    left: 700px;
+
+}
+
+.arrow1 {
+    position: absolute;
+    top: 301px;
+    left: 506px;
+}
+
+.arrow2 {
+    position: absolute;
+    top: 340px;
+    left: 1150px;
+}
+
+.arrow3 {
+    position: absolute;
+    top: 590px;
+    left: 1250px;
+}
+
+.bip1 {
+    position: absolute;
+    top: 345px;
+    left: 430px;
+    text-align: right;
+}
+
+.bip2 {
+    position: absolute;
+    top: 370px;
+    left: 1330px;
+    text-align: left;
+}
+
+.bip3 {
+    position: absolute;
+    top: 678px;
+    left: 1360px;
+    text-align: left;
+}
+
+.logobibg>h2 {
+    position: absolute;
+    top: 200px;
+    left: 870px;
+    color: #ff2cb8;
+    font-size: 30px;
+}
+
+.logobibg>h3 {
+    position: absolute;
+    top: 650px;
+    left: 820px;
+}
+
+/* sec6 시작 */
+.sec6container {
+    width: 1300px;
+    margin: 0 auto;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    color: #ff2cb8;
+}
+
+.sec6bg1 {
+    width: 100%;
+
+}
+
+.sec6bg1>ul {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+.sec6bg1>ul>li {
+    margin: 20px 50px;
+    position: relative;
+}
+
+.hover_imgcolor {
+    position: absolute;
+    top: 0;
+    left: 0;
+    display: none;
+}
+
+.sec6bg1>ul>li>a:hover .hover_imgcolor {
+    display: block;
+
+}
+
+.colortextbg {
+    background-color: #fcebfa;
+    padding: 10px 0;
+    border-radius: 40px;
+}
+
+.sec6bg2 {
+    width: 100%;
+    margin-top: 30px;
+}
+
+.sec6bg2>ul {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+.sec6bg2>ul>li {
+    margin: 20px 50px;
+    position: relative;
+}
+
+.colortextbg {
+    background-color: #fcebfa;
+    padding: 10px 0;
+    border-radius: 40px;
+}
+
+.sec6bg2>ul>li>a:hover .hover_imgcolor {
+    display: block;
+}
+
+.sec7center {
+    width: 1300px;
+    margin: 0 auto;
+
+}
+
+.lowsuger_bg1 {
+    width: 1230px;
+    height: 400px;
+    background-color: #feeef9;
+    border: 3px solid #fb5bc7;
+    border-radius: 50px;
+    position: relative;
+    overflow: hidden;
+}
+
+.lowsuger_img1 {
+    position: absolute;
+    top: 0;
+    left: 20px;
+}
+
+.lowsuger_img2 {
+    position: absolute;
+    top: 0;
+    right: 30px;
+}
+
+.lowsuger_bg1>p {
+    position: absolute;
+    top: 300px;
+    left: 400px;
+    text-align: right;
+    font-weight: 500;
+}
+
+.sec7center>h2 {
+    color: #ff2cb8;
+    margin-bottom: 80px;
+    font-size: 36px;
+}
+
+.sec8center>h2 {
+    color: #ff2cb8;
+    margin-bottom: 80px;
+    font-size: 36px;
+}
+
+.sec9center>h2 {
+    color: #ff2cb8;
+    margin-bottom: 80px;
+    font-size: 36px;
+}
+
+.sec8center {
+    width: 1300px;
+    margin: 0 auto;
+}
+
+.lowsuger_bg2 {
+    width: 1230px;
+    height: 390px;
+    background-color: #feeef9;
+    border: 3px solid #fb5bc7;
+    border-radius: 50px;
+    position: relative;
+    overflow: hidden;
+    margin-top: 40px;
+}
+
+.alternativesugar_img1 {
+    position: absolute;
+    top: 0;
+    left: 0;
+}
+
+.alternativesugar_img2 {
+    position: absolute;
+    top: 30px;
+    right: 30px;
+}
+
+.lowsuger_bg2>p {
+    position: absolute;
+    top: 250px;
+    left: 600px;
+    text-align: left;
+    font-weight: 500;
+}
+
+.lowsuger_bg3 {
+    width: 1230px;
+    height: 390px;
+    background-color: #feeef9;
+    border: 3px solid #fb5bc7;
+    border-radius: 50px;
+    position: relative;
+    overflow: hidden;
+    margin-top: 10px
+}
+
+.lowsuger_bg3_img1 {
+    position: absolute;
+    top: 30px;
+    left: 30px;
+}
+
+.lowsuger_bg3_img2 {
+    position: absolute;
+}
+
+.lowsuger_bg3>p {
+    position: absolute;
+    top: 270px;
+    left: 250px;
+    text-align: right;
+    font-weight: 500;
+
+}
+
+.lowsuger_bg3>p>span {
+    color: #ff2cb8;
+}
+
+.sec9center {
+    width: 1300px;
+    margin: 0 auto;
+}
+
+
+/* footer */
+.footerbg {
+    width: 100%;
+    height: 500px;
+    background: url(../img/footerskybg.jpg) repeat-x left top;
+    background-size: auto 500px;
+    animation: bgmove 30s linear infinite;
+}
+
+@keyframes bgmove {
+    0% {
+        background-position: 0px 0px;
+    }
+
+    100% {
+        background-position: 3000px 0px;
+    }
+}
+
+#footer {
+    overflow: hidden;
+    width: 100%;
+    margin: 0 auto;
+    height: 500px;
+    border-radius: 50px 50px 0 0;
+}
+
+.footercenter {
+    width: 100%;
+    height: 100%;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    color: #fff;
+}
+
+.footer_text {
+    font-weight: 500;
+    margin: 20px 0;
+}
+
+.footer_link>ul {
+    display: flex;
+    justify-content: center;
+    position: relative;
+}
+
+.footer_link>ul>li>a>img {
+
+    margin: 5px 10px;
+    border-radius: 10px;
+}
+
+.footer_link>ul>li>a {
+    display: inline-block;
+}
+
+.footer_link>ul>li {
+    position: relative;
+}
+
+.fhover_link1 {
+    position: absolute;
+    top: 5px;
+    left: 10px;
+    display: none;
+}
+
+.flink1>li>a:hover .fhover_link1 {
+    display: block;
+    /* box-shadow: 0px 0px 10px #ff2cb8; */
+}
+
+.f_flex {
+    display: flex;
+    justify-content: center;
+}
+
+.f_flex>p {
+    margin-right: 20px;
+}
+
+.fo_charecter img {
+    animation: unicon 3s linear infinite;
+}
+
+@keyframes unicon {
+    0% {
+        transform: translate(0px, 0px);
+    }
+
+    25% {
+        transform: translate(20px, 20px);
+    }
+
+    50% {
+        transform: translate(-150px, -100px);
+    }
+
+
+    100% {
+        transform: translate(0px, 0px);
+    }
+}
+
+/* footer */
