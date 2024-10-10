@@ -1,0 +1,530 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Notre Reve</title>
+    <!-- slide swiper 연결코드 -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
+    <!-- aosjs 연결 -->
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <link rel="stylesheet" href="./css/style.css">
+    <!-- font 연결 Pretendard 연결 -->
+    <link rel="stylesheet" href="./font/transfonter.org-20240903-040732/stylesheet.css">
+    <link rel="icon" href="./img/BI_icon.png">
+ 
+</head>
+<body>
+    <div id="heaer_wrap">
+    <div id="header">
+        <H1><a href="./index.html"><img src="./img/header_logo.png" alt=""></a></H1>
+			<ul class="nav">
+				<li><a href="#">MENU<div class="solid"></div></a>
+                    <ul class="sub">
+                        <li><a href="./submenu1.html"><img src="./img/dessert_icon.png" alt="">  빵&디저트</a></li>
+                        <li><a href="./submenu2.html"><img src="./img/yogurt_icon.png" alt="">  요거트</a></li> 
+                        <li><a href="./submenu3.html"><img src="./img/beverage_icon.png" alt="">  커피&음료</a></li>
+                        <li><a href="#"><img src="./img/tumbler_icon.png" alt="">  리빙</a></li>
+                    </ul>
+                </li>
+				<li><a href="submenu5.html">BRAND<div class="solid"></div></a>
+                    <ul class="sub">
+                        <li><a href="submenu5.html"><img src="./img/brand_icon.png" alt="">  브랜드 소개</a></li>
+                        <li><a href="submenu5.html"><img src="./img/BI_icon.png" alt="">  BI</a></li>
+                        <li><a href="submenu5.html"><img src="./img/lowsuger_icon.png" alt="">  저당 스토리</a></li>
+                    </ul>
+                </li>
+				<li><a href="#">COMMUNITY<div class="solid"></div></a>
+                    <ul class="sub">
+                        <li><a href="./submenu6.html"><img src="./img/event_icon.png" alt="">  이벤트</a></li>
+                        <li><a href="./submenu6.html"><img src="./img/notice_icon.png" alt="">  공지사항</a></li>
+                    </ul>
+                </li>
+				<li><a href="#">STORE<div class="solid"></div></a>
+                    <ul class="sub">
+                        <li><a href="./submenu7.html"><img src="./img/store-icon.png" alt="">  매장찾기</a></li>
+                    </ul>
+                </li>
+			</ul> 
+    </div>
+    <!-- 햄버거 -->
+    <div class="hamburger_wrap">
+        <a href="javascript:return false;" class="hamburger_button">
+            <span></span>
+            <span></span>
+            <span></span>
+            <span></span>
+        </a>
+    
+        <div class="overlay">
+            <div class="menu">
+                <ul>
+                    <li><a href="./submenu1.html">MENU</a></li>
+                    <li><a href="./submenu5.html">BRAND</a></li>
+                    <li><a href="./submenu6.html">COMMUNITY</a></li>
+                    <li><a href="./submenu7.html">STORE</a></li>
+                </ul>
+            </div>
+        </div>
+    </div>
+        <!-- 햄버거끝 -->
+    <div class="sub_wrap"></div>
+    </div>
+     <!-- 배너 -->
+     <div class="swiper bannerSwiper">
+        <div class="swiper-wrapper">
+          <div class="swiper-slide">
+            <img src="./img/mainbanner1.jpg " alt="" class="pc_banner">
+            <img src="./img/mobile_banner1.jpg" alt="" class="mobile_banner">
+          </div>
+          <div class="swiper-slide">
+            <img src="./img/mainbanner2.jpg" alt="" class="pc_banner">
+            <img src="./img/mobile_banner2.jpg" alt="" class="mobile_banner">
+          </div>
+          <div class="swiper-slide">
+            <img class="pc_banner" src="./img/mainbanner3.jpg" alt="">
+            <img class="mobile_banner" src="./img/mobile_banner3.jpg" alt="">
+          </div>
+        </div>
+        <div class="swiper-button-next banner_btn"></div>
+        <div class="swiper-button-prev banner_btn"></div>
+        <div class="swiper-pagination bannernumb"></div>
+      </div>
+            
+      <!-- 첫번째 container -->
+        <div id="container1_wrap">
+            <div id="container1">
+                <h2>- Notre Reve 세상으로 초대합니다 -</h2>
+                <p class="h2bottom">Notre Reve은 달콤하고 건강함을 추구합니다.</p>
+                <ul class="imgbox1">
+                    <li data-aos="fade-up-right" data-aos-duration="400"><div>
+                        <img src="./img/container_imgbox1.png" alt="img1">
+                        <h3>원료부터 달라요</h3>
+                        <p>정제된 탄수화물과 혈당관리를 위한 제품을
+                            <br>위해 끊임없이 연구하고 개발하고 있습니다.
+                        </p>
+                    </div></li>
+                    <li data-aos="fade-up" data-aos-duration="400"><div>
+                        <img src="./img/container_imgbox2.png" alt="img2">
+                        <h3>지구환경을 지켜요</h3>                
+                        <p>친환경 종이 포장재 사용과 식품낭비가 없는        
+                            <br>푸드업사이클링을 통해 환경을 보존에 기여합니다.
+                        </p>
+                    </div></li>
+                    <li data-aos="fade-up-left" data-aos-duration="400"><div>
+                        <img src="./img/container_imgbox3.png" alt="img3">
+                        <h3>달콤함을 포기못해요</h3>                
+                        <p>Notre Reve는 건강함을 추구하지만 달콤함과        
+                            <br>맛있는 것을 포기 못해 끊임 없이 연구합니다. 
+                        </p>
+                    </div></li>
+                </ul>
+                    <div class="star1 st"><img src="./img/star1.png" alt=""></div>
+                    <div class="star2 st"><img src="./img/star2.png" alt=""></div>
+                    <div class="star3 st"><img src="./img/star3.png" alt=""></div>
+                    <div class="star4 st"><img src="./img/star4.png" alt=""></div>
+                    <div class="star5 st"><img src="./img/star5.png" alt=""></div>
+                    <div class="star6 st"><img src="./img/star6.png" alt=""></div>
+                    <div class="star7 st"><img src="./img/star2.png" alt=""></div>
+                    <div class="star8 st"><img src="./img/star3.png" alt=""></div>
+                    <div class="star9 st"><img src="./img/star4.png" alt=""></div>
+                    <div class="star10 st"><img src="./img/star7.png" alt=""></div>
+                    <div class="star11 st"><img src="./img/star1.png" alt=""></div>
+                    <div class="star12 st"><img src="./img/star6.png" alt=""></div>
+            </div>    
+        </div> 
+           <!-- 두번째 -->
+        <div id="section2">
+                <img src="./img/section2background.png" alt="" class="section2bg">
+                <img src="./img/uniconshadow1.png" alt="" class="uniconshadow1">
+                <img src="./img/uniconshadow2.png" alt="" class="uniconshadow2">
+                <img src="./img/section2s1.png" alt="" class="s1">
+                <img src="./img/section2s2.png" alt="" class="s2">
+                <img src="./img/section2s3.png" alt="" class="s3">
+                <div class="section2center">
+                    <div class="dessert" data-aos="fade-right" data-aos-duration="500">
+                        <div class="de_title">DESSERT</div>
+                        <div class="dessert_banner">
+                            <ul>
+                                <li><a href="#"><img src="./img/strowberrycupcakebanner.jpg" alt=""></a></li>
+                                <li><a href="#"><img src="./img/berrychocolatecupcakebanner.jpg" alt=""></a></li>
+                                <li><a href="#"><img src="./img/mangocupcakebanner.jpg" alt=""></a></li>
+                                <li><a href="#"><img src="./img/figcupcakebanner.jpg" alt=""></a></li>
+                                <li><a href="#"><img src="./img/bannercupcakebanner.jpg" alt=""></a></li>
+                                <li><a href="#"><img src="./img/blueberrycupcakebanner.jpg" alt=""></a></li>
+                                <li><a href="#"><img src="./img/grapefruitcupcakebanner.jpg" alt=""></a></li>
+                                <li><a href="#"><img src="./img/caramelcupcakebanner.jpg" alt=""></a></li>
+                                <li><a href="#"><img src="./img/pineapplecupcakebanner.jpg" alt=""></a></li>
+                                <li><a href="#"><img src="./img/unicorncupcakebanner.jpg" alt=""></a></li>
+                            </ul>
+                        </div> 
+                        <div class="container swiper">
+                            <div class="slide_container">
+                                <div class="card_wrapper swiper-wrapper">
+                                    <div class="card swiper-slide">
+                                        <div class="image_box">
+                                            <img src="./img/strowberrycupcake.png" alt="">
+                                        </div>
+                                        <div class="profile_details">
+                                            <h4>딸기머핀</h4>
+                                        </div>
+                                    </div>
+                                    <div class="card swiper-slide">
+                                        <div class="image_box">
+                                            <img src="./img/berrychocolatecupcake.png" alt="">
+                                        </div>
+                                        <div class="profile_details">
+                                            <h4>딸기초코머핀</h4>
+                                        </div>
+                                    </div>
+                                    <div class="card swiper-slide">
+                                        <div class="image_box">
+                                            <img src="./img/mangocupcake.png" alt="">
+                                        </div>
+                                        <div class="profile_details">
+                                            <h4>망고머핀</h4>
+                                        </div>
+                                    </div>
+                                    <div class="card swiper-slide">
+                                        <div class="image_box">
+                                            <img src="./img/figcupcake.png" alt="">
+                                        </div>
+                                        <div class="profile_details">
+                                            <h4>무화과머핀</h4>
+                                        </div>
+                                    </div>
+                                    <div class="card swiper-slide">
+                                        <div class="image_box">
+                                            <img src="./img/bannercupcake.png" alt="">
+                                        </div>
+                                        <div class="profile_details">
+                                            <h4>바나나머핀</h4>
+                                        </div>
+                                    </div>
+                                    <div class="card swiper-slide">
+                                        <div class="image_box">
+                                            <img src="./img/blueberrycupcake.png" alt="">
+                                        </div>
+                                        <div class="profile_details">
+                                            <h4>블루베리머핀</h4>
+                                        </div>
+                                    </div>
+                                    <div class="card swiper-slide">
+                                        <div class="image_box">
+                                            <img src="./img/grapefruitcupcake.png" alt="">
+                                        </div>
+                                        <div class="profile_details">
+                                            <h4>자몽머핀</h4>
+                                        </div>
+                                    </div>
+                                    <div class="card swiper-slide">
+                                        <div class="image_box">
+                                            <img src="./img/caramelcupcake.png" alt="">
+                                        </div>
+                                        <div class="profile_details">
+                                            <h4>카라멜머핀</h4>
+                                        </div>
+                                    </div>
+                                    <div class="card swiper-slide">
+                                        <div class="image_box">
+                                            <img src="./img/pineapplecupcake.png" alt="">
+                                        </div>
+                                        <div class="profile_details">
+                                            <h4>파인애플머핀</h4>
+                                        </div>
+                                    </div>
+                                    <div class="card swiper-slide">
+                                        <div class="image_box">
+                                            <img src="./img/unicorncupcake.png" alt="">
+                                        </div>
+                                        <div class="profile_details">
+                                            <h4>유니콘머핀</h4>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div> 
+                    <div class="yogurt" data-aos="fade-left" data-aos-duration="1000">
+                        <div class="yo_container swiper">
+                            <div class="yo_slide_container">
+                                <div class="yo_card_wrapper swiper-wrapper">
+                                    <div class="yo_card swiper-slide">
+                                        <div class="image_box2">
+                                            <img src="./img_sub/yogurt1.png" alt="">
+                                        </div>
+                                        <div class="yo_name">
+                                            <h4>그릭요거트</h4>
+                                            <h4>[플레인맛]</h4>
+                                        </div>
+                                    </div>
+                                    <div class="yo_card swiper-slide">
+                                        <div class="image_box2">
+                                            <img src="./img_sub/yogurt2.png" alt="">
+                                        </div>
+                                        <div class="yo_name">
+                                            <h4>그릭요거트</h4>
+                                            <h4>[딸기맛]</h4>
+                                        </div>
+                                    </div>
+                                    <div class="yo_card swiper-slide">
+                                        <div class="image_box2">
+                                            <img src="./img_sub/yogurt3.png" alt="">
+                                        </div>
+                                        <div class="yo_name">
+                                            <h4>그릭요거트</h4>
+                                            <h4>[망고맛]</h4>
+                                        </div>
+                                    </div>
+                                    <div class="yo_card swiper-slide">
+                                        <div class="image_box2">
+                                            <img src="./img_sub/yogurt6.png" alt="">
+                                        </div>
+                                        <div class="yo_name">
+                                            <h4>그릭요거트</h4>
+                                            <h4>[초코맛]</h4>
+                                        </div>
+                                    </div>
+                                    <div class="yo_card swiper-slide">
+                                        <div class="image_box2">
+                                            <img src="./img_sub/yogurt5.png" alt="">
+                                        </div>
+                                        <div class="yo_name">
+                                            <h4>그릭요거트</h4>
+                                            <h4>[녹차맛]</h4>
+                                        </div>
+                                    </div>
+                                    <div class="yo_card swiper-slide">
+                                        <div class="image_box2">
+                                            <img src="./img_sub/yogurt4.png" alt="">
+                                        </div>
+                                        <div class="yo_name">
+                                            <h4>그릭요거트</h4>
+                                            <h4>[황치즈맛]</h4>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="yo_title">YOGURT</div>
+                        <div class="yogurt_banner">
+                            <ul>
+                                <li><a href="#"><img src="./img_sub/yogurt1_banner.png" alt=""></a></li>
+                                <li><a href="#"><img src="./img_sub/yogurt2_banner.png" alt=""></a></li>
+                                <li><a href="#"><img src="./img_sub/yogurt3_banner.png" alt=""></a></li>
+                                <li><a href="#"><img src="./img_sub/yogurt6_banner.png" alt=""></a></li>
+                                <li><a href="#"><img src="./img_sub/yogurt5_banner.png" alt=""></a></li>
+                                <li><a href="#"><img src="./img_sub/yogurt4_banner.png" alt=""></a></li>
+                            </ul>
+                        </div>
+                    </div>  
+                </div>
+        </div>
+        <div id="section3">
+                <div class="section3center">
+                    <div class="section3text">
+                        <p>Notre Reve은 ‘더 나은 성분’을 고민하고 ‘더 나은 식품’을 제안드려요.
+                           <br> Notre Reve만의 영양학적으로 균형잡힌 디저트를 만나보세요.
+                           <br>건강을 생각하지만  마법같은 맛과 달콤함 ~ 
+                           <br>Notre Reve의 모두가 건강디저트를 맛있게 먹을 수 있게 끝까지 노력할께요 </p>
+                           <div class="section3link"><a href="./submenu5.html">자세히보기</a></div>
+                           
+                    </div>
+                    <div class="unicon1"><img src="./img/charecter1.png" alt=""></div>
+                    <div class="unicon2"><img src="./img/charecter2.png" alt=""></div>
+                    <div class="unicon3"><img src="./img/charecter3.png" alt=""></div>
+                </div>
+        </div>
+        <div id="section4">
+                <div class="pinkbg">
+                    <img src="./img/section4bg2.jpg" alt="">
+                </div>
+                <div class="section4center">
+                    <div class="leftbg_s4" data-aos="zoom-in-left"  data-aos-duration="500">
+                        <h3>··· EVENT ···</h3>
+                        <div class="imgbox1_s4">
+                            
+                        </div>
+                    </div>
+                    <div class="rightbg_s4" data-aos="zoom-in-right"  data-aos-duration="500">
+                        <div class="img1_rig" id="click200">
+                            <img src="./img/event1.jpg" alt="">
+                            <div class="show500img1" id="show500">
+                                <img src="./img/event1_1.jpg" alt="">
+                            </div>
+                        </div>
+                        <div class="img2_rig" id="click200">
+                            <img src="./img/event2.jpg" alt="">
+                            <div class="show500img2"  id="show500">
+                                <img src="./img/event2_1.jpg" alt="">
+                            </div>
+                        </div>
+                        <div class="img3_rig" id="click200">
+                            <img src="./img/event3.jpg" alt="">
+                            <div class="show500img3"  id="show500">
+                                <img src="./img/event3_1.jpg" alt="">
+                            </div>
+                        </div>
+                        <div class="img4_rig" id="click200">
+                            <img src="./img/event4.jpg" alt="">
+                            <div class="show500img4"  id="show500">
+                                <img src="./img/event4_1.jpg" alt="">
+                            </div>
+                        </div>
+                    </div>
+                    <div class="mobile_s4">
+                        <ul>
+                            <li><a href="javascript:return false;"><img src="./img/event1_1.jpg" alt=""></a></li>
+                            <li><a href="javascript:return false;"><img src="./img/event2_1.jpg" alt=""></a></li>
+                            <li><a href="javascript:return false;"><img src="./img/event3_1.jpg" alt=""></a></li>
+                            <li><a href="javascript:return false;"><img src="./img/event4_1.jpg" alt=""></a></li>
+                        </ul>
+                    </div>
+                </div>
+        </div>
+        <div id="section5">
+                <h3>··· SNS ···</h3>
+                <div class="snsslide1">
+                    <div class="snsslide_inner1">
+                        <ul>
+                            <li><a href="#"><img src="./img/snsimg1.jpg" alt=""></a>
+                                <div class="snsshadow"><img src="./img/sns_shadow.png" alt=""></div>
+                            </li>
+                            <li><a href="#"><img src="./img/snsimg2.jpg" alt=""></a>
+                                <div class="snsshadow"><img src="./img/sns_shadow.png" alt=""></div>
+                            </li>
+                            <li><a href="#"><img src="./img/snsimg3.jpg" alt=""></a>
+                                <div class="snsshadow"><img src="./img/sns_shadow.png" alt=""></div>
+                            </li>
+                            <li><a href="#"><img src="./img/snsimg4.jpg" alt=""></a>
+                                <div class="snsshadow"><img src="./img/sns_shadow.png" alt=""></div>
+                            </li>
+                            <li><a href="#"><img src="./img/snsimg5.jpg" alt=""></a>
+                                <div class="snsshadow"><img src="./img/sns_shadow.png" alt=""></div>
+                            </li>
+                            <li><a href="#"><img src="./img/snsimg6.jpg" alt=""></a>
+                                <div class="snsshadow"><img src="./img/sns_shadow.png" alt=""></div>
+                            </li>
+                        </ul>
+                        <ul>
+                            <li><a href="#"><img src="./img/snsimg1.jpg" alt=""></a>
+                                <div class="snsshadow"><img src="./img/sns_shadow.png" alt=""></div>
+                            </li>
+                            <li><a href="#"><img src="./img/snsimg2.jpg" alt=""></a>
+                                <div class="snsshadow"><img src="./img/sns_shadow.png" alt=""></div>
+                            </li>
+                            <li><a href="#"><img src="./img/snsimg3.jpg" alt=""></a>
+                                <div class="snsshadow"><img src="./img/sns_shadow.png" alt=""></div>
+                            </li>
+                            <li><a href="#"><img src="./img/snsimg4.jpg" alt=""></a>
+                                <div class="snsshadow"><img src="./img/sns_shadow.png" alt=""></div>
+                            </li>
+                            <li><a href="#"><img src="./img/snsimg5.jpg" alt=""></a>
+                                <div class="snsshadow"><img src="./img/sns_shadow.png" alt=""></div>
+                            </li>
+                            <li><a href="#"><img src="./img/snsimg6.jpg" alt=""></a>
+                                <div class="snsshadow"><img src="./img/sns_shadow.png" alt=""></div>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="snsslide2">
+                    <div class="snsslide_inner2">
+                        <ul>
+                            <li><a href="#"><img src="./img/snsimg7.jpg" alt=""></a>
+                                <div class="snsshadow"><img src="./img/sns_shadow.png" alt=""></div>
+                            </li>
+                            <li><a href="#"><img src="./img/snsimg8.jpg" alt=""></a>
+                                <div class="snsshadow"><img src="./img/sns_shadow.png" alt=""></div>
+                            </li>
+                            <li><a href="#"><img src="./img/snsimg9.jpg" alt=""></a>
+                                <div class="snsshadow"><img src="./img/sns_shadow.png" alt=""></div>
+                            </li>
+                            <li><a href="#"><img src="./img/snsimg10.jpg" alt=""></a>
+                                <div class="snsshadow"><img src="./img/sns_shadow.png" alt=""></div>
+                            </li>
+                            <li><a href="#"><img src="./img/snsimg11.jpg" alt=""></a>
+                                <div class="snsshadow"><img src="./img/sns_shadow.png" alt=""></div>
+                            </li>
+                            <li><a href="#"><img src="./img/snsimg12.jpg" alt=""></a>
+                                <div class="snsshadow"><img src="./img/sns_shadow.png" alt=""></div>
+                            </li>
+                        </ul>
+                        <ul>
+                            <li><a href="#"><img src="./img/snsimg7.jpg" alt=""></a>
+                                <div class="snsshadow"><img src="./img/sns_shadow.png" alt=""></div>
+                            </li>
+                            <li><a href="#"><img src="./img/snsimg8.jpg" alt=""></a>
+                                <div class="snsshadow"><img src="./img/sns_shadow.png" alt=""></div>
+                            </li>
+                            <li><a href="#"><img src="./img/snsimg9.jpg" alt=""></a>
+                                <div class="snsshadow"><img src="./img/sns_shadow.png" alt=""></div>
+                            </li>
+                            <li><a href="#"><img src="./img/snsimg10.jpg" alt=""></a>
+                                <div class="snsshadow"><img src="./img/sns_shadow.png" alt=""></div>
+                            </li>
+                            <li><a href="#"><img src="./img/snsimg11.jpg" alt=""></a>
+                                <div class="snsshadow"><img src="./img/sns_shadow.png" alt=""></div>
+                            </li>
+                            <li><a href="#"><img src="./img/snsimg12.jpg" alt=""></a>
+                                <div class="snsshadow"><img src="./img/sns_shadow.png" alt=""></div>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+        </div>
+            <div id="footwrap">
+                <div id="footer" data-aos="fade-up" data-aos-duration="600">
+                    <div class="footerbg">
+                        <div class="footercenter">
+                            <div class="fo_logobg">
+                                <img src="./img/footer_logo.png" alt="">
+                            </div>
+                            <div class="fo_textbg">
+                                <div class="footer_text">
+                                    <div class="f_flex">
+                                        <p>사업자  번호 | 000-000-0000</p>
+                                        <p>대     표     자 | 이성은</p>
+                                        <p>본             점 | 부산광역시 금정구</p>
+                                    </div>
+                                    <div class="f_flex">
+                                        <p>전  화  번  호 | 070-123-4567</p>
+                                        <p>팩             스 | 0504-010-8067</p>
+                                        <p>이     메     일 | tjd51392@naver.com</p>
+                                    </div>
+                    
+                                </div>
+                                <div class="footer_link">
+                                    <ul class="flink1">
+                                        <li><a href="#"><img src="./img/instar_link.png" alt="">
+                                            <div class="fhover_link1"><img src="./img/instar_link2.png" alt=""></div>
+                                        </a></li>
+                                        <li><a href="#"><img src="./img/utobe_link.png" alt="">
+                                            <div class="fhover_link1"><img src="./img/utobe_link2.png" alt=""></div>
+                                        </a></li>
+                                        <li><a href="#"><img src="./img/blog_link.png" alt="">
+                                            <div class="fhover_link1"><img src="./img/blog_link2.png" alt=""></div>
+                                        </a></li>
+                                    </ul>
+                                </div>
+                            </div>
+                            <div class="fo_charecter">
+                                <img src="./img/footer_charecter.png" alt="">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+    <!-- js 시작 -->
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+    <script src="./js/jquery-3.7.1.min.js"></script>
+    <!-- aos -->
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script>
+        AOS.init();
+      </script>
+    <!-- 내가 입력하는 js -->
+    <script src="./js/script.js"></script>
+</body>
+</html>

@@ -1,0 +1,339 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml">
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="icon" href="./img/BI_icon.png">
+    <link rel="stylesheet" type="text/css" href="./css/jquery.fullPage.css" />
+	<!--필수 css.-->
+	<!--aos effect-->
+		<link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet"><!--aos css 연결-->
+		<script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script><!--aos js 연결-->
+	<link href="./css/style3.css" rel="stylesheet" type="text/css">
+	<!--내가만든css-->
+	
+
+	<!--[if IE]>
+		<script type="text/javascript">
+			 var console = { log: function() {} };
+		</script>
+	<![endif]-->
+
+	<!--필수 js들 시작-->
+	
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>
+	<script src="https://code.jquery.com/ui/1.9.1/jquery-ui.min.js" integrity="sha256-UezNdLBLZaG/YoRcr48I68gr8pb5gyTBM+di5P8p6t8=" crossorigin="anonymous"></script>
+	<script type="text/javascript" src="./js/jquery.fullPage.js"></script>
+
+    <!--필수 js들 끝-->
+</head>
+<body>
+    <!-- 고정해더 시작 -->
+    <div id="heaer_wrap">
+        <div id="header">
+            <H1><a href="./index.html"><img src="./img/header_logo.png" alt=""></a></H1>
+            <ul class="nav">
+                <li><a href="javascript:return false;">MENU<div class="solid"></div></a>
+                    <ul class="sub">
+                        <li><a href="./submenu1.html"><img src="./img/dessert_icon.png" alt=""> 빵&디저트</a></li>
+                        <li><a href="./submenu2.html"><img src="./img/yogurt_icon.png" alt=""> 요거트</a></li>
+                        <li><a href="./submenu3.html"><img src="./img/beverage_icon.png" alt=""> 커피&음료</a></li>
+                        <li><a href="#"><img src="./img/tumbler_icon.png" alt=""> 리빙</a></li>
+                    </ul>
+                </li>
+                <li><a href="javascript:return false;">BRAND<div class="solid"></div></a>
+                    <ul class="sub">
+                        <li><a href="./submenu5.html"><img src="./img/brand_icon.png" alt=""> 브랜드 소개</a></li>
+                        <li><a href="#brand_section2"><img src="./img/BI_icon.png" alt=""> BI</a></li>
+                        <li><a href="#brand_section3"><img src="./img/lowsuger_icon.png" alt=""> 저당 스토리</a></li>
+                    </ul>
+                </li>
+                <li><a href="javascript:return false;">COMMUNITY<div class="solid"></div></a>
+                    <ul class="sub">
+                        <li><a href="./submenu6.html"><img src="./img/event_icon.png" alt=""> 이벤트</a></li>
+                        <li><a href="./submenu6.html"><img src="./img/notice_icon.png" alt=""> 공지사항</a></li>
+                    </ul>
+                </li>
+                <li><a href="javascript:return false;">STORE<div class="solid"></div></a>
+                    <ul class="sub">
+                        <li><a href="./submenu7.html"><img src="./img/store-icon.png" alt=""> 매장찾기</a></li>
+                    </ul>
+                </li>
+            </ul>
+        </div>
+        <div class="sub_wrap"></div>
+    </div>
+    <!-- header 끝 -->
+    <div id="fullpage">
+        <div class="section sec1" id="brand_section0"><!--클래스section필수. 미리 정해져있는 모양-->
+            <video src="./img_sub/notre reve_mp4.mp4" autoplay loop muted></video>
+        </div>
+        <div class="section sec2" id="brand_section1"><!--slide클래스시 해당 섹션안에서 가로 슬라이드-->
+            <div id="banner_wrap">
+                <div class="banner-container">
+                    <div class="banner" data-image="./img_sub/hoverimg1.jpg">
+                        <img src="./img_sub/hoverimg1_1.jpg" alt="배너 1">
+                    </div>
+                    <div class="banner" data-image="./img_sub/hoverimg2.jpg">
+                        <img src="./img_sub/hoverimg2_1.jpg" alt="배너 2">
+                    </div>
+                    <div class="banner" data-image="./img_sub/hoverimg3.jpg">
+                        <img src="./img_sub/hoverimg3_1.jpg" alt="배너 3">
+                    </div>
+                </div>
+            </div>
+    
+        </div>
+        <div class="section sec3" id="brand_section2">
+            <div class="backgroundng1" data-aos="fade-right" data-aos-duration="500">
+                <div class="uniconimg1" data-aos="fade-up-right" data-aos-duration="2000"><img src="./img_sub2/unicon1.png" alt=""></div>
+                <img src="./img_sub2/notre.png" alt="" class="notrelogo" data-aos="zoom-in-right" data-aos-duration="1000">    
+                <p data-aos="fade-up" data-aos-duration="3000">
+                    <span>우리</span>는 건강함 삶을 위해 꾸준히 관리하고 노력합니다.
+                 <br>하지만 빵순이와 빵돌이한테 맛있고 달콤한 디저트는 포기가 안되죠
+                </p> 
+            </div>
+        </div>
+        <div class="section sec4" id="brand_section3">
+            <div class="backgroundng2" data-aos="fade-left" data-aos-duration="500">
+                <div class="uniconimg2" data-aos="fade-up-right" data-aos-duration="2000"><img src="./img_sub2/unicon2.png" alt=""></div>
+                <img src="./img_sub2/reve.png" alt="" class="revelogo" data-aos="zoom-out-right" data-aos-duration="1000">    
+                <p data-aos="fade-up" data-aos-duration="3000">
+                    <span>꿈</span>같은 이야기이지만 Notre Reve에서는 가능한 일입니다.
+                <br>저당, 고단백 디저트’ Notre Reve에서 즐겨보세요
+                </p> 
+            </div>
+        </div>
+        <div class="section sec5" id="brand_section4">
+            <div class="logobibg">
+                <img src="./img_sub2/bi_logo.png" alt="" class="bilogo" data-aos="zoom-in" data-aos-duration="500">
+                <img src="./img_sub2/logoarrow1.png" alt="" class="arrow1"  data-aos="fade-up-right" data-aos-duration="1000">
+                <img src="./img_sub2/logoarrow2.png" alt=""  class="arrow2" data-aos="fade-left" data-aos-duration="1000">
+                <img src="./img_sub2/logoarrow3.png" alt=""  class="arrow3" data-aos="fade-up-left" data-aos-duration="1000">
+                <div class="bip1" data-aos="zoom-in-right" data-aos-duration="2000">
+                    <h3>유니콘 뿔</h3>
+                    <p>뿔은 신비롭고 마법같은 
+                       <br> 유니콘의 대표 특징이에요
+                       <br> 유니콘처럼 신비롭고 마법같은 맛을 
+                       <br> Notre Reve에서 즐겨보세요</p>
+                </div>
+                <div class="bip2" data-aos="zoom-in-left" data-aos-duration="2000">
+                    <h3>유니콘 날개</h3>
+                    <p> 날 것 같이 항상 기분 좋게 즐겨보세요</p>
+                </div>
+                <div class="bip3" data-aos="zoom-in-left" data-aos-duration="2000">
+                    <h3>유니콘 꼬리</h3>
+                    <p>풍성한 꼬리는 항상 풍부한 맛을 즐기도록 
+                        <br> 디저트 개발에 노력하겠다는 의지와
+                        <br>  항상 Notre Reve가 초심을 잃지말고 
+                        <br>항상 나아가야 하는 방향이 
+                        <br> 일정하게 유지하겠다는 의지를 표현했어요</p>
+                </div>
+                <h2 data-aos="fade-down">Main Logo</h2>
+                <h3 data-aos="fade-up" data-aos-duration="500">Notre Reve(프랑스어 : 우리의 꿈)</h3>
+            </div>
+        </div>
+        <div class="section sec6" id="brand_section5">
+            <div class="sec6container">
+               <div class="sec6bg1">
+                <h2 data-aos="zoom-in-down" data-aos-duration="300">Main Color</h2>
+                <ul data-aos="fade-left"  data-aos-duration="1000">
+                    <li>
+                        <a href="javascript:return false;">
+                            <img src="./img_sub2/color1.png" alt="color1">
+                            <div class="hover_imgcolor">
+                                <img src="./img_sub2/color9.png" alt="">
+                            </div>
+                        </a>
+                        <div class="colortextbg">
+                            <p>R 249 G 45 B 171
+                               <br>C 3 M 88  R 0 K 0</p>
+                        </div>
+                    </li>
+                    <li>
+                        <a href="javascript:return false;">
+                            <img src="./img_sub2/color2.png" alt="color1">
+                            <div class="hover_imgcolor">
+                                <img src="./img_sub2/color10.png" alt="">
+                            </div>
+                        </a>
+                        <div class="colortextbg">
+                            <p>R 252 G 235 B 250
+                            <br>C 1 M 8  R 0 K 0</p>
+                        </div>
+                    </li>
+                    <li>
+                        <a href="javascript:return false;">
+                            <img src="./img_sub2/color3.png" alt="color1">
+                            <div class="hover_imgcolor">
+                                <img src="./img_sub2/color11.png" alt="">
+                            </div>
+                        </a>
+                        <div class="colortextbg">
+                            <p>R 105 G 251 B 202
+                               <br>C 46 M 0  R 35 K 0</p>
+                        </div>
+                    </li>
+                    <li>
+                        <a href="javascript:return false;">
+                            <img src="./img_sub2/color4.png" alt="color1">
+                            <div class="hover_imgcolor">
+                                <img src="./img_sub2/color12.png" alt="">
+                            </div>
+                        </a>
+                        <div class="colortextbg">
+                            <p>R 195 G 252 B 230
+                              <br>C 20 M 0  R 15 K 0</p>
+                        </div>
+                    </li>
+                </ul>
+               </div>
+               <div class="sec6bg2">
+                <h2 data-aos="zoom-in-down" data-aos-duration="300">Sub Color</h2>
+                <ul data-aos="fade-right"  data-aos-duration="2000">
+                    <li>
+                        <a href="javascript:return false;">
+                            <img src="./img_sub2/color5.png" alt="color1">
+                            <div class="hover_imgcolor">
+                                <img src="./img_sub2/color13.png" alt="">
+                            </div>
+                        </a>
+                        <div class="colortextbg">
+                            <p>R 249 G 128 B 208
+                            <br>C 6 M 59  R 0 K 0</p>
+                        </div>
+                    </li>
+                    <li>
+                        <a href="javascript:return false;">
+                            <img src="./img_sub2/color6.png" alt="color1">
+                            <div class="hover_imgcolor">
+                                <img src="./img_sub2/color14.png" alt="">
+                            </div>
+                        </a>
+                        <div class="colortextbg">
+                            <p>R 252 G 252 B 240
+                              <br> C 1 M 0  R 5 K 0</p>
+                        </div>
+                    </li>
+                    <li>
+                        <a href="javascript:return false;">
+                            <img src="./img_sub2/color7.png" alt="color1">
+                            <div class="hover_imgcolor">
+                                <img src="./img_sub2/color15.png" alt="">
+                            </div>
+                        </a>
+                        <div class="colortextbg">
+                            <p>R 36 G 169 B 152
+                               <br>C 76 M 10  R 49 K 0</p>
+                        </div>
+                    </li>
+                    <li>
+                        <a href="javascript:return false;">
+                            <img src="./img_sub2/color8.png" alt="color1">
+                            <div class="hover_imgcolor">
+                                <img src="./img_sub2/color16.png" alt="">
+                            </div>
+                        </a>
+                        <div class="colortextbg">
+                            <p>R 53 G 8 B 37
+                              <br>  C 64 M 85  R 55 K 70</p>
+                        </div>
+                    </li>
+                </ul>
+               </div>
+            </div>
+        </div>
+        <div class="section sec7" id="brand_section6">
+            <div class="sec7center">
+                <h2 data-aos="fade-down">저당스토리</h2>
+                <div class="lowsuger_bg1" data-aos="fade-up" data-aos-duration="300">
+                    <img src="./img_sub2/emergencynews_text.png" alt="" class="lowsuger_img1"  data-aos="fade-down-right" data-aos-duration="1000">
+                    <img src="./img_sub2/emergencynews.png" alt="lowsuger_img2" class="lowsuger_img2" data-aos="fade-left"  data-aos-duration="1500">
+                    <p data-aos="fade-up" data-aos-duration="2000">현재 2030세대에서
+                        <br>당뇨가 급증하는 사례가
+                        <br>발생하고 있습니다.
+                    </p>
+                </div>
+            </div>
+        </div>
+        <div class="section sec8" id="brand_section7">
+            <div class="sec8center">
+                <h2 data-aos="fade-down">저당스토리</h2>
+                <div class="lowsuger_bg2"data-aos="fade-up" data-aos-duration="200">
+                    <img src="./img_sub2/alternativesugar.png" alt="alternativesugar_img1" class="alternativesugar_img1" data-aos="fade-right" data-aos-duration="600" >
+                    <img src="./img_sub2/alternativesugar_text.png" alt="" class="alternativesugar_img2" data-aos="fade-down-left" data-aos-duration="600">
+                    <p data-aos="fade-up" data-aos-duration="1000">이에 Notre Reve는 
+                       <br> 맛있고 달콤한 디저트를 개발하지만 
+                       <br> 대체당을 이용하여 
+                       <br> 고객님들의 부담을 덜어드리고자 
+                       <br> 노력하고 있습니다.
+                    </p>
+                </div>
+                
+            </div>
+        </div>
+        <div class="section sec9" id="brand_section8">
+            <div class="sec9center">
+                <h2 data-aos="fade-down">저당스토리</h2>
+                <div class="lowsuger_bg3"data-aos="fade-up" data-aos-duration="1500">
+                    <img src="./img_sub2/alluloseaspartame_text.png" alt="" class="lowsuger_bg3_img1" data-aos="fade-down-right" data-aos-duration="2000">
+                    <img src="./img_sub2/alluloseaspartame.png" alt="" class="lowsuger_bg3_img2"data-aos="fade-left" data-aos-duration="2000">
+                    <p data-aos="fade-up" data-aos-duration="3000">특히 천연 감미료인 
+                       <br> <span>알룰로스(Allulose)</span>와  
+                       <br> 인공감미료 <span>아스파담(Aspartame)</span>을 사용하여 
+                       <br> 혈당 스파이크가 일어나지 않는 디저트를 개발했습니다. </p>
+                </div>
+            </div>
+        </div>
+        <div class="section sec9 fp-auto-height" id="brand_section9">
+            <div id="footer">
+                <div class="footerbg">
+                    <div class="footercenter">
+                        <div class="fo_logobg">
+                            <img src="./img/footer_logo.png" alt="">
+                        </div>
+                        <div class="fo_textbg">
+                            <div class="footer_text">
+                                <div class="f_flex">
+                                    <p>사업자 번호 | 000-000-0000</p>
+                                    <p>대 표 자 | 이성은</p>
+                                    <p>본 점 | 부산광역시 금정구</p>
+                                </div>
+                                <div class="f_flex">
+                                    <p>전 화 번 호 | 070-123-4567</p>
+                                    <p>팩 스 | 0504-010-8067</p>
+                                    <p>이 메 일 | tjd51392@naver.com</p>
+                                </div>
+        
+                            </div>
+                            <div class="footer_link">
+                                <ul class="flink1">
+                                    <li><a href="#"><img src="./img/instar_link.png" alt="">
+                                            <div class="fhover_link1"><img src="./img/instar_link2.png" alt=""></div>
+                                        </a></li>
+                                    <li><a href="#"><img src="./img/utobe_link.png" alt="">
+                                            <div class="fhover_link1"><img src="./img/utobe_link2.png" alt=""></div>
+                                        </a></li>
+                                    <li><a href="#"><img src="./img/blog_link.png" alt="">
+                                            <div class="fhover_link1"><img src="./img/blog_link2.png" alt=""></div>
+                                        </a></li>
+                                </ul>
+                            </div>
+                        </div>
+                        <div class="fo_charecter">
+                            <img src="./img/footer_charecter.png" alt="">
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- js -->
+    <script src='js/jquery-ui.min.js'></script>
+    <script src="./js/script3.js"></script>
+</body>
+</html>
