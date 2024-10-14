@@ -204,16 +204,12 @@ body {
     justify-content: center;
     align-items: center;
     height: 100vh;
-    margin: 0;
 }
-
 .banner-container {
     display: flex;
     /* width: 1200px; */
     height: 750px;
-
 }
-
 .banner {
     width: 400px;
     height: 750px;
@@ -325,62 +321,62 @@ body {
 
 .bilogo {
     position: absolute;
-    top: 250px;
-    left: 700px;
+    top:25%;
+    left:36%;
 
 }
 
 .arrow1 {
     position: absolute;
-    top: 301px;
-    left: 506px;
+    top: 30%;
+    left: 26%;
 }
 
 .arrow2 {
     position: absolute;
-    top: 340px;
-    left: 1150px;
+    top: 33.7%;
+    left: 58.7%;
 }
 
 .arrow3 {
     position: absolute;
-    top: 590px;
-    left: 1250px;
+    top: 58%;
+    left: 63%;
 }
 
 .bip1 {
     position: absolute;
-    top: 345px;
-    left: 430px;
+    top: 34.5%;
+    left: 22.2%;
     text-align: right;
 }
 
 .bip2 {
     position: absolute;
-    top: 370px;
-    left: 1330px;
+    top: 36.5%;
+    left: 67.5%;
     text-align: left;
 }
 
 .bip3 {
     position: absolute;
-    top: 678px;
-    left: 1360px;
+    top: 67.2%;
+    left: 68.5%;
     text-align: left;
 }
 
 .logobibg>h2 {
     position: absolute;
-    top: 200px;
-    left: 870px;
+    top: 20%;
+    left: 46%;
     color: #ff2cb8;
     font-size: 30px;
 }
 
 .logobibg>h3 {
     position: absolute;
-    top: 650px;
-    left: 820px;
+    top: 66%;
+    left: 43%;
 }
 
 /* sec6 시작 */
